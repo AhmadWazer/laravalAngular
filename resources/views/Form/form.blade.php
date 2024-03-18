@@ -27,7 +27,7 @@
                 <th>Email</th>
                 <th>Phone#</th>
 {{--                <th>Gender</th>--}}
-                <th>DateOfBirth</th>
+{{--                <th>DateOfBirth</th>--}}
                 <th>Action</th>
             </tr>
             </thead>
@@ -39,7 +39,7 @@
                 <td>{{$data->email}}</td>
                 <td>{{$data->phone}}</td>
 {{--                <td>{{$data->gender}}</td>--}}
-                <td>{{$data->DoB}}</td>
+{{--                <td>{{$data->DoB}}</td>--}}
                 <td>
                     <div class="d-flex justify-content-center">
                         <div class="m-2">
@@ -68,7 +68,7 @@
             </tbody>
         </table>
     {{--for show pagination--}}
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-end">
         {{ $value->links() }}
     </div>
     </div>
