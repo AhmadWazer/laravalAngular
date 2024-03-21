@@ -19,7 +19,7 @@ class MailableName extends Mailable
      */
     public function __construct()
     {
-        // terjhsbfjrwuriehterhbfjuyerbf
+        // in here the mailable controller we3 will add to fix a mile to send to user, customer or owner when new user or customer added
     }
 
     /**
