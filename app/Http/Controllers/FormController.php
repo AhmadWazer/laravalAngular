@@ -13,6 +13,7 @@ use App\Models\ItemModel;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
+use App\Rules\ValidEmailValidation as emailValid;
 
 class FormController extends Controller
 {
@@ -38,6 +39,14 @@ class FormController extends Controller
                'radio' => 'required',
                 'city' => 'required',
                 'dob' => 'required'
+            ],
+            [
+                'name.required' => 'Please Enter The Name First And Submit.....!',
+                'fname.required' => 'Please Enter fname Then Submit...!',
+                'phone.required' => 'Please Enter phone Number Then Submit....!',
+                'radio.required' => 'Please Check a Radio Button and Then Submit....!',
+                'city.required' => 'Please Enter City Then submit.....!',
+                'dob.required' => 'Please enter DOB Then Submit.......!'
             ]
         );
         $data = new Newuser;
@@ -50,7 +59,8 @@ class FormController extends Controller
         $data->dob = request('dob');
 
         $data->save();
-        return redirect('/form/create')->with('success','The Entered Data Stored Successfully....!');
+        return redirect('/form/create')->with('success','The New User Stored Successfully....!');
+
     }
     public function edit($id): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
@@ -114,8 +124,17 @@ public function additem()
 {
     return view('form.additem');
 }
+
+
 public  function store(Request $request)
 {
+    $request->validate(
+        [
+            'item_name' => 'required',
+            'item_price' =>'required',
+            'item_image' =>'required',
+            'item_date' =>'required'
+            ]);
 $value = new ItemModel();
 $value->item_name = request('item_name');
 $value->item_price = request('item_price');

@@ -8,8 +8,8 @@
             <form action="{{route('ajax.update',$id)}}" method="POST" >
             @csrf
                 <div id="form">
-                    <button id="editButton" data-id="{{ $id }}"></button>
-                    <label for="ad">Name</label>
+                    <button id="editButton" data-id="{{ $id }}" class="btn btn-danger">Edit</button><br>
+                    <label for="ad">Name</label><br>
                     <input id="ad" placeholder="Wazir Ahmad">
                 </div>
             </form>

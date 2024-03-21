@@ -58,6 +58,8 @@
 </tr>
 </tbody>
 </table>
+
+    <a class="btn btn-success" href="/ajax/ajaxform">Back</a>
 </div>
 <script>
     $(document).ready(function(){
@@ -80,7 +82,7 @@
                     rows += `<td  class="d-flex justify-content-center"><a href="ajaxeditform${result[i].customer_id}"><i class="bi bi-pencil-square text-success m-2"></i></a>`;
                     rows += `<a href="delete${result[i].customer_id}"><i class="bi bi-trash text-danger m-2"></i></a></td>`;
                     rows += `<td><a href="/form/sale${result[i].customer_id}"><i class="bi bi-card-text m-2"></i></a>`;
-                    rows += `<a href="/form/showSales${result[i].customer_id}" style="color: orange; text-decoration: none">Purchased</a></td></tr>`;
+                    rows += `<a href="/form/showSales${result[i].customer_id}" style="color: orange; text-decoration: none">PP</a></td></tr>`;
                 }
                 // console.log(rows);
                 tableRecord.html(rows);
