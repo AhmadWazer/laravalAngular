@@ -19,7 +19,7 @@ class MailableName extends Mailable
      */
     public function __construct()
     {
-        //
+        // terjhsbfjrwuriehterhbfjuyerbf
     }
 
     /**
