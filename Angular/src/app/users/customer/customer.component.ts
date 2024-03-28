@@ -18,7 +18,12 @@ import  { PageEvent } from "@angular/material/paginator";
   providers: [CustomerService]
 })
 export class CustomerComponent implements OnInit {
-
+////////////change input background color/////
+  myCol: string = 'red';
+  // updateColor(color: string) {
+  //   this.myCol = color;
+  // }
+  /////////////////////////
   customers: usersModel[];
   viewCustomers: eusersModel['customer_id'];
   editCustomers: any ={};

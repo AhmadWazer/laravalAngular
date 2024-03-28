@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <div class="container mt-3">
        {{--Display Message When Table Update or Delete--}}
         @if(Session::has('delete'))
@@ -16,6 +17,9 @@
         {{--Display Message When Table Update or Delete--}}
         <div class="d-flex justify-content-between">
         <h2>Table</h2>
+{{--///////////////////////////////--}}
+
+{{--//////////////////////////////--}}
         <a href="{{url('/form/create')}}" style="text-decoration: none" class="text-success btn-sm">
             <i class="bi bi-pencil-fill"></i>Create</a>
         </div>
