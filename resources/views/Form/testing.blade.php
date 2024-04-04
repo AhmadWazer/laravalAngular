@@ -78,8 +78,7 @@
             text-align:left;
 
         }
-        /*.right-log*/
-        {right:50px !important;}
+        .right-log{right:50px !important;}
         .login-show,
         .register-show{
             z-index: 1;
@@ -90,8 +89,7 @@
             text-align:left;
             padding:50px;
         }
-        /*.show-log-panel*/
-        {
+        .show-log-panel{
             display:block;
             opacity:0.9;
         }
@@ -139,34 +137,34 @@
             float:right;
             cursor:pointer;
         }
-        /*.credit {*/
-        /*    position:absolute;*/
-        /*    bottom:10px;*/
-        /*    left:10px;*/
-        /*    color: #3B3B25;*/
-        /*    margin: 0;*/
-        /*    padding: 0;*/
-        /*    font-family: Arial,sans-serif;*/
-        /*    text-transform: uppercase;*/
-        /*    font-size: 12px;*/
-        /*    font-weight: bold;*/
-        /*    letter-spacing: 1px;*/
-        /*    z-index: 99;*/
-        /*}*/
+        .credit {
+            position:absolute;
+            bottom:10px;
+            left:10px;
+            color: #3B3B25;
+            margin: 0;
+            padding: 0;
+            font-family: Arial,sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            z-index: 99;
+        }
         a{
             text-decoration:none;
             color:#2c7715;
         }
-        /*.is-invalid {*/
-        /*    border: 1px solid red; !* Add a red border *!*/
-        /*    background-color: #f8d7da; !* Add a light red background color *!*/
-        /*    color: #721c24; !* Change text color to dark red *!*/
-        /*}*/
+        .is-invalid {
+            border: 1px solid red; /* Add a red border */
+            background-color: #f8d7da; /* Add a light red background color */
+            color: #721c24; /* Change text color to dark red */
+        }
 
-        /*.is-invalid:focus {*/
-        /*    border-color: #b71c1c; !* Change border color on focus *!*/
-        /*    outline: 0; !* Remove default focus outline *!*/
-        /*}*/
+        .is-invalid:focus {
+            border-color: #b71c1c; /* Change border color on focus */
+            outline: 0; /* Remove default focus outline */
+        }
     </style>
     <title></title>
 
