@@ -1,14 +1,14 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
+//use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AjaxController;
-use App\Http\Controllers\AngularJSController;
+//use App\Http\Controllers\AngularJSController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\AngulerJs;
+//use App\Http\Controllers\AngulerJs;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,5 +52,4 @@ Route::get('/ajax/viewdata{id}',[AjaxController::class,'index'])->name('ajax.vie
 Route::get('/ajax/user-dataview{id}',[AjaxController::class,'data_view']);
 
 //Route::any('show',[AngulerJs::class,'shows']);
-
 

@@ -165,7 +165,7 @@
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
-    <input type="email" formControlName="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"autocomplete="email">
+    <input type="email" formControlName="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" autocomplete="email">
   </div>
   <div class="mb-3">
     <span>Gender</span>
@@ -198,7 +198,7 @@
   </div>
   <div class="mb-3">
     <label for="estatus" class="form-label">Status</label>
-    <input type="number" formControlName="status" name="status" class="form-control" id="estatus"value="{{editCustomers.status}}"  pattern="[01]" oninput="this.value = this.value.replace(/[^0-1]/g, '')">
+    <input type="number" formControlName="status" name="status" class="form-control" id="estatus" value="{{editCustomers.status}}"  pattern="[01]" oninput="this.value = this.value.replace(/[^0-1]/g, '')">
   </div>
   <button type="submit" class="btn btn-primary">Update</button>
   <button type="button" class="btn btn-info m-1" (click)="cancelEdit()">Back</button>
@@ -224,3 +224,6 @@
   </div>
 </div>
 </div>
+
+
+
