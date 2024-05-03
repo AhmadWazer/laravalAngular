@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        /* Custom pagination link color */
+        .pagination a {
+            color: #b9fab9; /* Change this to the desired color value  */
+            background-color: #0f5132;
+            border-color: #0f5132;
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #ffffff; /* Change this to the desired color value of the active paginate value */
+            border-color: #ffffff; /* Change this to the desired color value of the active paginate border*/
+            color: #0f5132; /* Change this to the desired color value of inactive paginate*/
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <div class="container mt-3">
        {{--Display Message When Table Update or Delete--}}
@@ -71,12 +84,12 @@
             @endforeach
             </tbody>
         </table>
-    {{--for show pagination--}}
-    <div class="container d-flex justify-content-end">
+        {{--for show pagination--}}
+    <div class="container d-flex justify-content-center">
         {{ $value->links() }}
     </div>
+        {{--for show pagination--}}
     </div>
-    {{--for show pagination--}}
 {{--Script for delete button allert--}}
 <script>
     let deleteLinks = document.querySelectorAll('.delete');
